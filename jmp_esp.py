@@ -1,5 +1,6 @@
 #!/usr/bin/env python  
-import socket  
+import socket
+import struct
 RHOST = "10.11.12.36"
 RPORT = 110 
 
